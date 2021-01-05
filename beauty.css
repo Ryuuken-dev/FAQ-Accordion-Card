@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(128, 0, 128, .5) 10%, rgba(0, 0, 255, .8));
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fyloCard {
+    background-color: white;
+    border-radius: 5%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80vh;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+
+
+.fyloCard__womanDesktop {       /* Ukrywanie elementów */
+    display: none;
+}
+
+.fyloCard__slideText {
+   display: none;
+   margin-top: 2%;
+   
+}
+
+
+
+.fyloCard__imgContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: -10%;
+}
+
+.fyloCard__womanMobile {
+    width: 70%; 
+}
+
+.fyloCard__header {
+    text-align: center;
+}
+
+.fyloCard__paragraph {
+    text-align: center;
+    font-size: 12px;
+}
+
+.fyloCard__line {
+    opacity: 50%;
+    margin-top: 5%;
+}
+
+.fyloCard__boldText {
+    font-weight: bold;
+}
+
+.fyloCard__arrowContainer {
+    text-align: center;
+}
+
+.fyloCard__arrow {
+    cursor: pointer;
+}
+
+.fyloCard__textBox {
+    margin-top: 10%;
+}
+
+@media only screen and (min-device-width : 241px) and (max-device-width : 319px) {
+    .fyloCard__paragraph {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) {
+    .fyloCard__paragraph {
+        text-align: left;
+        font-size: 14px;
+        width: 86%;
+    }
+
+    .fyloCard__arrowContainer, .fyloCard__paragraph {
+        display: inline-block;
+    }
+
+    .fyloCard__arrowContainer {
+        margin-left: 10%;
+    }
+
+    .fyloCard__textBox {
+        font-size: 0;
+    }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .fyloCard__paragraph {
+        font-size: 18px;
+    }
+
+    .fyloCard__header {
+        font-size: 36px;
+    }
+
+    .fyloCard__arrow {
+        width: 150%;
+    }
+    
+    
+    }
+
+@media only screen and (min-device-width : 1024px) and (orientation: portrait) {
+    .fyloCard__paragraph {
+        font-size: 28px;
+    }
+
+    .fyloCard__header {
+        font-size: 46px;
+    }
+
+    .fyloCard__arrow {
+        width: 250%;
+    }
+}
+
+}
+
+@media only screen  and (min-width: 1224px) {
+    .fyloCard {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        overflow: visible;
+        width: 70%;
+        padding: 0;
+    }
+
+    .fyloCard__imgContainer, .fyloCard__textContainer {
+        position: absolute;
+    }
+
+    .fyloCard__imgContainer {
+        left: -11%;
+        top: 41%;
+        display: flex;
+        justify-content: flex-start;
+        width: 60%;
+        background-color: transparent;
+    }
+
+    .fyloCard__textContainer {
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+    }
+
+    .fyloCard__textBox {
+        margin-top: 5%;
+    }
+
+    .fyloCard__header {
+        text-align: left;
+        margin-top: -10%;
+        font-size: 36px;
+    }
+
+    .fyloCard__paragraph {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .fyloCard__womanDesktop {
+        display: block;
+        width: 70%;
+    }
+
+    .fyloCard__womanMobile {
+        display: none;
+    }
+
+    .fyloCard__arrow {
+        width: 150%;
+    }
+
+    
+}
+
+
